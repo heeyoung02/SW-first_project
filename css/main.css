@@ -5,23 +5,21 @@
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   position: relative;
-  background-color: #fdd20e;
+  background-color: white;
 }
 
 .main_box a {
   position: absolute;
   font-size: 25px;
   bottom: 20%;
-  right: 20%;
+  right: 33%;
   color: #c72d1b;
   text-decoration: none;
-  border: 3px solid rgba(0, 0, 0, 0.2);
-  padding: 5px;
-  border-radius: 10%;
 }
 
 .main_box a:hover {
   font-weight: 900;
+  cursor: pointer;
 }
 
 .link-icon {
@@ -64,4 +62,43 @@
 }
 
 .basic_font {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  font-size: 23px;
+  margin-left: 80px;
+  margin-right: 80px;
+  white-space: pre-line;
+  line-height: 60px;
+  color: #c72d1b;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* 버튼 효과 */
+
+.btn_box {
+  position: absolute;
+  bottom: 20%;
+  right: 33%;
+}
+
+#bt_start {
+  background-color: salmon;
+  color: white;
+  padding: 1.5em 2.5em;
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  outline: none;
+  align-self: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#bt_start:active {
+  animation: random-bg 0.5s linear infinite, grow 1300ms ease infinite;
 }
