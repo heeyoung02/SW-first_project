@@ -34,7 +34,7 @@ footer {
 /* 모바일 */
 @media (max-width: 767px) {
   .main_box a {
-    font-size: 18px;
+    font-size: 20px;
   }
   .main_box {
     width: 500px;
@@ -42,6 +42,18 @@ footer {
   }
   main {
     justify-content: center;
+  }
+  .btn_box {
+    position: absolute;
+    left: 33%;
+    bottom: 20%;
+  }
+  .basic_font {
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 30px;
   }
 }
 
