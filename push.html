@@ -35,6 +35,27 @@
       </div>
     </main>
 
+    <div class="share_box">
+      <span>공유하기</span>
+      <div class="share_column">
+        <a
+          id="btnTwitter"
+          class="link-icon twitter"
+          href="javascript:shareTwitter();"
+          >트위터</a
+        >
+        <a
+          id="btnFacebook"
+          class="link-icon facebook"
+          href="javascript:shareFacebook();"
+          >페이스북</a
+        >
+        <a id="btnKakao" class="link-icon kakao" href="javascript:shareKakao();"
+          >카카오톡</a
+        >
+      </div>
+    </div>
+
     <!--하단광고-->
     <div class="ad_topbottom"></div>
   </body>
@@ -69,4 +90,20 @@
       location.href = "finish.html?data=" + cnt;
     }
   }
+</script>
+
+<script>
+  function shareTwitter() {
+    var sendText = ""; // 전달할 텍스트
+    var sendUrl = ""; // 전달할 URL
+    window.open(
+      "https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl
+    );
+  }
+  function shareFacebook() {
+    var sendUrl = ""; // 전달할 URL
+    window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
+  }
+
+  /* 카카오 공유하기 자바스크립트 */
 </script>

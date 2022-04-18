@@ -23,34 +23,20 @@
 
     <main>
       <!--메인 컨텐츠-->
-      <div class="main_box">
-        <span class="basic_font">나는 자기를..</span>
+      <div class="main_box" id="save_box">
+        <div class="scrshot" title="결과 저장하기">💾</div>
+        <span class="basic_font finish_font">나는 자기를..</span>
         <div id="result">0</div>
         <span class="basic_font finish_font">만큼 사랑해</span>
         <div class="container">
           <img class="finish_img" src="img/testimg.jpg" />
         </div>
+        <div class="finish_box">
+          <a class="finish_a" href="index.html">다시 시작하기</a>
+          <span class="finish_a">결과 공유하기</span>
+        </div>
       </div>
     </main>
-
-    <script>
-      function getParameter(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-          results = regex.exec(location.search);
-        return results === null
-          ? ""
-          : decodeURIComponent(results[1].replace(/\+/g, " "));
-      }
-    </script>
-    <script>
-      var data = getParameter("data");
-      if (data == "" || data == null) {
-        data = 0;
-      }
-
-      document.getElementById("result").innerText = data;
-    </script>
 
     <div class="share_box">
       <span>공유하기</span>
@@ -79,3 +65,41 @@
 
   <footer>Copyrightⓒ2022 by team SW</footer>
 </html>
+
+<script>
+  function getParameter(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+    return results === null
+      ? ""
+      : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+</script>
+<script>
+  var data = getParameter("data");
+  if (data == "" || data == null) {
+    data = 0;
+  }
+
+  document.getElementById("result").innerText = data;
+</script>
+<script>
+  function shareTwitter() {
+    var sendText = ""; // 전달할 텍스트
+    var sendUrl = ""; // 전달할 URL
+    window.open(
+      "https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl
+    );
+  }
+  function shareFacebook() {
+    var sendUrl = ""; // 전달할 URL
+    window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
+  }
+
+  /* 카카오 공유하기 자바스크립트 */
+</script>
+
+<!-- 스크린샷 -->
+
+<script></script>
