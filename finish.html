@@ -24,8 +24,15 @@
     <main>
       <!--메인 컨텐츠-->
       <div class="main_box" id="save_box">
-        <div class="scrshot" title="결과 저장하기">💾</div>
-        <span class="basic_font finish_font">나는 자기를..</span>
+        <div class="t_s">
+          <h2 id="clock"></h2>
+          <div class="scrshot" title="결과 저장하기">💾</div>
+        </div>
+        <span class="p_font"
+          >나는
+          <p></p>
+          을(를)..</span
+        >
         <div id="result">0</div>
         <span class="basic_font finish_font">만큼 사랑해</span>
         <div class="container">
@@ -66,24 +73,8 @@
   <footer>Copyrightⓒ2022 by team SW</footer>
 </html>
 
-<script>
-  function getParameter(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-      results = regex.exec(location.search);
-    return results === null
-      ? ""
-      : decodeURIComponent(results[1].replace(/\+/g, " "));
-  }
-</script>
-<script>
-  var data = getParameter("data");
-  if (data == "" || data == null) {
-    data = 0;
-  }
+<script src="js/finish.js"></script>
 
-  document.getElementById("result").innerText = data;
-</script>
 <script>
   function shareTwitter() {
     var sendText = ""; // 전달할 텍스트

@@ -24,12 +24,12 @@
     <main>
       <!--메인 컨텐츠-->
       <div class="main_box">
-        <span class="basic_font index_font">자기.. 나 얼만큼 사랑해?</span>
-        <div class="container">
-          <!--<img class="index_img" src="img/testimg.jpg" />-->
-          <div class="heart">&#x2665;</div>
+        <span class="basic_font name_font">사랑하는 사람의 이름을 입력하세요</span>
+        <form id="name_form" action="push.html">
+            <input id="name" type="text" maxlength="20" required/>
+            <input id="name_btn" type="submit" value="확인"/>
+        </form> 
         </div>
-        <a class="start_a" onclick="next_page()">TEST START💕</a>
       </div>
     </main>
 
@@ -61,11 +61,9 @@
   <footer>Copyrightⓒ2022 by team SW</footer>
 </html>
 
-<script>
-  function next_page() {
-    location.href = "name.html";
-  }
-</script>
+<script src="js/name.js"></script>
+
+
 <script>
   function shareTwitter() {
     var sendText = ""; // 전달할 텍스트

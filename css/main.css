@@ -81,7 +81,25 @@
 }
 
 .finish_font {
-  margin-top: 10px;
+  margin-top: 3px;
+}
+
+.p_font {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  font-size: 23px;
+  margin-left: 80px;
+  margin-right: 80px;
+  line-height: 60px;
+  color: #c72d1b;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+p {
+  margin-left: 8px;
 }
 
 .finish_box {
@@ -96,12 +114,60 @@
   color: #c72d1b;
 }
 
-.scrshot {
+.t_s {
+  display: flex;
   position: absolute;
   margin-top: 8px;
   right: 3%;
 }
+
+.scrshot {
+  margin-left: 10px;
+}
+
 .scrshot:hover {
+  cursor: pointer;
+}
+
+/* 이름입력칸 */
+
+.name_font {
+  margin-top: 80px;
+}
+#name_form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+#name {
+  width: 350px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+}
+
+#name_btn {
+  border: 1px solid skyblue;
+  background-color: rgb(233, 233, 233);
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: skyblue;
+  padding: 5px 8px;
+  margin-top: 20px;
+}
+
+#name_btn:hover {
+  color: white;
+  background-color: skyblue;
   cursor: pointer;
 }
 
@@ -133,6 +199,7 @@ img {
 .btn_box {
   position: absolute;
   left: 33%;
+  right: 33%;
   bottom: 20%;
 }
 
