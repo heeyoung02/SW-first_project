@@ -75,6 +75,16 @@ footer {
     padding: 3px 5px;
     margin-top: 15px;
   }
+  #result {
+    margin-top: 1px;
+  }
+  .p_font {
+    margin-top: 25px;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 30px;
+  }
 }
 
 /* 테블릿 세로 */
