@@ -82,7 +82,7 @@ footer {
     margin-top: 1px;
   }
   .p_font {
-    margin-top: 25px;
+    margin-top: 10px;
     font-size: 20px;
     margin-left: 60px;
     margin-right: 60px;
@@ -91,9 +91,11 @@ footer {
   #bt_start {
     background-color: salmon;
     color: white;
-    width: auto;
-    height: auto;
-    padding: 20px 13px;
+    width: 150px;
+    height: 40px;
+  }
+  .btn_box {
+    bottom: 550px;
   }
 }
 
