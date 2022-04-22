@@ -35,6 +35,9 @@ footer {
 @media (max-width: 767px) {
   .start_a {
     font-size: 20px;
+    right: 33%;
+    left: 33%;
+    padding: 10px 8px;
   }
   .main_box {
     width: 500px;
@@ -84,6 +87,13 @@ footer {
     margin-left: 60px;
     margin-right: 60px;
     line-height: 30px;
+  }
+  #bt_start {
+    background-color: salmon;
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 20px 13px;
   }
 }
 
