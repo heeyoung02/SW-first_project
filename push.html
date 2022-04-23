@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" onmouseup="fn_up()">
+<html lang="en" onmouseup="fn_up()" ontouchend="fn_up()">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,7 +15,7 @@
       href="https://emojigraph.org/media/joypixels/heart-on-fire_2764-fe0f-200d-1f525.png"
     />
   </head>
-  <body>
+  <body ondragstart="return false" onselectstart="return false">
     <header>
       <!--상단광고-->
       <div class="ad_topbottom"></div>
@@ -25,12 +25,25 @@
       <!--메인 컨텐츠-->
       <div class="main_box">
         <span class="basic_font">버튼을 누르고 있는동안 사랑이 측정됩니다</span>
+        <!--<span class="warning_font">
+          <span class="warning_font warning">⚠️ Warning ⚠️</span>
+          ❣️ 테스트를 진행하는 동안 당신은 아무것도 할수 없습니다.<br />
+          당신이 할 수 있는것은 오직 그(그녀) 생각뿐<br />
+          ❣️ 금보다 귀한 시간을 오직 그(그녀) 를 위해<br />
+          바칠수 있는 당신의 마음을 증명해보세요.<br />
+        </span>!-->
         <div class="time_box">
           <p id="time"></p>
           <p id="rand"></p>
         </div>
         <div class="btn_box">
-          <button id="bt_start" onmousedown="fn_down()">테스트 시작하기</button>
+          <button
+            id="bt_start"
+            onmousedown="fn_down()"
+            ontouchstart="fn_down()"
+          >
+            테스트 시작하기
+          </button>
         </div>
       </div>
     </main>
