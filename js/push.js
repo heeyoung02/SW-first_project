@@ -1,5 +1,6 @@
 var status = 0;
 function fn_down() {
+  document.getElementById("warningText").style.display = "none";
   document.getElementById("bt_start").innerText = "테스트 중";
   document.getElementsByClassName("warning_font").innerText = "";
   status = 1;
