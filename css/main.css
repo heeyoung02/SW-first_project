@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-top: 10px;
 }
 
 .start_a {
@@ -263,6 +264,7 @@ img {
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .share_column {
