@@ -46,8 +46,23 @@ if (data == "" || data == null) {
 
 document.getElementById("result").innerText = data;
 
-/* 로컬 따오기 */
+/* data값 숨기기 */
+history.replaceState({}, null, location.pathname);
 
+/* 로컬 따오기 */
 const lineBlank = localStorage.getItem("Name");
 
 document.querySelector("p").innerText = lineBlank;
+
+/* 이미지 */
+document.getElementById("result_img").src = testimg();
+
+function testimg() {
+  var img_src;
+  if (data < 1000) {
+    img_src = "img/img_sad.png";
+    return img_src;
+  } else data >= 1000;
+  img_src = "img/img_happy.png";
+  return img_src;
+}
